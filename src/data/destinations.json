@@ -5,6 +5,8 @@
       "name": "London",
       "country": "U.K.",
       "bestSeason": "Spring, Summer",
+      "description": "London, the capital of the United Kingdom, is a bustling metropolis known for its rich history, iconic landmarks like the Tower of London and Buckingham Palace, and vibrant cultural scene.",
+      "image": "london.jpg",
       "coordinates": { "lat": 51.5074, "lng": -0.1278 },
       "activities": [
         {
@@ -37,6 +39,8 @@
       "name": "New York City",
       "country": "USA",
       "bestSeason": "Spring, Fall",
+      "description": "New York City, often called 'The Big Apple,' is renowned for its towering skyscrapers, diverse neighborhoods, world-class museums, and the vibrant arts and entertainment industry.",
+      "image": "newyork.jpg",
       "coordinates": { "lat": 40.7128, "lng": -74.006 },
       "activities": [
         {
@@ -65,6 +69,8 @@
       "name": "Bali",
       "country": "Indonesia",
       "bestSeason": "April-October",
+      "description": "Bali, the 'Island of the Gods,' offers lush landscapes, stunning beaches, serene temples, and a vibrant cultural scene, making it a paradise for both relaxation and adventure.",
+      "image": "bali.jpg",
       "coordinates": { "lat": -8.3405, "lng": 115.092 },
       "activities": [
         {
@@ -100,6 +106,8 @@
       "name": "O'ahu",
       "country": "USA",
       "bestSeason": "Year-round",
+      "description": "O'ahu, known as 'The Gathering Place,' combines stunning beaches, lush mountains, and vibrant urban life in Honolulu, catering to outdoor enthusiasts and culture seekers alike.",
+      "image": "oahu.jpg",
       "coordinates": { "lat": 21.4389, "lng": -158.0001 },
       "activities": [
         {
@@ -132,6 +140,8 @@
       "name": "Dubai",
       "country": "U.A.E.",
       "bestSeason": "Winter, Spring",
+      "description": "Dubai, a global city in the United Arab Emirates, is synonymous with luxury, futuristic architecture like the Burj Khalifa, expansive shopping malls, and a vibrant nightlife scene.",
+      "image": "dubai.jpg",
       "coordinates": { "lat": 25.276987, "lng": 55.296249 },
       "activities": [
         {
@@ -167,6 +177,8 @@
       "name": "Las Vegas",
       "country": "USA",
       "bestSeason": "Spring, Fall",
+      "description": "Las Vegas, the entertainment capital of the world, is famous for its vibrant nightlife, casinos, world-class shows, and extravagant resorts along the iconic Las Vegas Strip.",
+      "image": "lasvegas.jpg",
       "coordinates": { "lat": 36.1699, "lng": -115.1398 },
       "activities": [
         {
@@ -195,6 +207,8 @@
       "name": "Sicily",
       "country": "Italy",
       "bestSeason": "Spring, Summer",
+      "description": "Sicily, the largest island in the Mediterranean, boasts a rich history, stunning beaches, active volcanoes like Mount Etna, and vibrant culinary traditions.",
+      "image": "sicily.jpg",
       "coordinates": { "lat": 37.6, "lng": 14.0154 },
       "activities": [
         {
@@ -230,6 +244,8 @@
       "name": "Florida Keys",
       "country": "USA",
       "bestSeason": "Winter, Spring",
+      "description": "The Florida Keys are a coral cay archipelago known for their beautiful beaches, vibrant marine life, and a laid-back island atmosphere perfect for relaxation and water activities.",
+      "image": "floridakeys.jpg",
       "coordinates": { "lat": 24.5551, "lng": -81.7826 },
       "activities": [
         {
@@ -262,6 +278,8 @@
       "name": "Paris",
       "country": "France",
       "bestSeason": "Spring, Fall",
+      "description": "Paris, the 'City of Light,' is celebrated for its art, fashion, gastronomy, and culture, with iconic landmarks like the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral.",
+      "image": "paris.jpg",
       "coordinates": { "lat": 48.8566, "lng": 2.3522 },
       "activities": [
         {
@@ -297,6 +315,8 @@
       "name": "New Orleans",
       "country": "USA",
       "bestSeason": "Spring, Fall",
+      "description": "New Orleans is renowned for its vibrant music scene, rich history, unique cultural blend, lively festivals like Mardi Gras, and delicious Creole cuisine.",
+      "image": "neworleans.jpg",
       "coordinates": { "lat": 29.9511, "lng": -90.0715 },
       "activities": [
         {
@@ -329,6 +349,8 @@
       "name": "Rome",
       "country": "Italy",
       "bestSeason": "Spring, Fall",
+      "description": "Rome, the Eternal City, is a sprawling metropolis steeped in history, home to ancient ruins like the Colosseum and the Roman Forum, as well as stunning Renaissance art and architecture.",
+      "image": "rome.jpg",
       "coordinates": { "lat": 41.9028, "lng": 12.4964 },
       "activities": [
         {
@@ -364,6 +386,8 @@
       "name": "Nashville",
       "country": "USA",
       "bestSeason": "Spring, Fall",
+      "description": "Nashville, the heart of country music, is known for its vibrant live music scene, historic honky-tonks, and landmarks like the Grand Ole Opry and the Country Music Hall of Fame.",
+      "image": "nashville.jpg",
       "coordinates": { "lat": 36.1627, "lng": -86.7816 },
       "activities": [
         {
@@ -396,6 +420,8 @@
       "name": "Hanoi",
       "country": "Vietnam",
       "bestSeason": "October - April",
+      "description": "Hanoi, the capital of Vietnam, blends French colonial architecture with modern skyscrapers, bustling street markets, serene lakes, and a rich tapestry of cultural and historical sites.",
+      "image": "hanoiVietnam.jpg",
       "coordinates": { "lat": 21.0285, "lng": 105.8544 },
       "activities": [
         {
@@ -431,6 +457,8 @@
       "name": "San Francisco",
       "country": "USA",
       "bestSeason": "Fall, Spring",
+      "description": "San Francisco is renowned for its iconic Golden Gate Bridge, historic cable cars, diverse neighborhoods, and scenic waterfronts along the picturesque Bay Area.",
+      "image": "sanfrancisco.jpg",
       "coordinates": { "lat": 37.7749, "lng": -122.4194 },
       "activities": [
         {
@@ -459,6 +487,8 @@
       "name": "Marrakech",
       "country": "Morocco",
       "bestSeason": "Spring, Fall",
+      "description": "Marrakech is a vibrant city in Morocco, famous for its bustling souks, stunning palaces, tranquil gardens, and the lively Jemaa el-Fnaa square, offering a rich cultural experience.",
+      "image": "marrakechMorocco.jpg",
       "coordinates": { "lat": 31.6295, "lng": -7.9811 },
       "activities": [
         {
@@ -491,6 +521,8 @@
       "name": "Chicago",
       "country": "USA",
       "bestSeason": "Summer, Fall",
+      "description": "Chicago, known as the 'Windy City,' is famous for its impressive architecture, deep-dish pizza, vibrant arts scene, and stunning waterfront along Lake Michigan.",
+      "image": "chicago.jpg",
       "coordinates": { "lat": 41.8781, "lng": -87.6298 },
       "activities": [
         {
@@ -523,6 +555,8 @@
       "name": "Crete",
       "country": "Greece",
       "bestSeason": "Spring, Summer",
+      "description": "Crete, the largest of the Greek islands, offers stunning beaches, ancient archaeological sites like Knossos Palace, picturesque villages, and a rich culinary tradition.",
+      "image": "creteGreece.jpg",
       "coordinates": { "lat": 35.2401, "lng": 24.8093 },
       "activities": [
         {
@@ -558,6 +592,8 @@
       "name": "Charleston",
       "country": "USA",
       "bestSeason": "Spring, Fall",
+      "description": "Charleston, South Carolina, is celebrated for its well-preserved architecture, historic plantations, charming cobblestone streets, and vibrant culinary scene.",
+      "image": "charleston.jpg",
       "coordinates": { "lat": 32.7765, "lng": -79.9311 },
       "activities": [
         {
@@ -589,6 +625,8 @@
       "id": 19,
       "name": "Bangkok",
       "country": "Thailand",
+      "description": "Bangkok, Thailand's bustling capital, is known for ornate temples, vibrant street life, bustling markets, and a rich blend of traditional and modern attractions.",
+      "image": "bangkokThailand.jpg",
       "bestSeason": "November - February",
       "coordinates": { "lat": 13.7563, "lng": 100.5018 },
       "activities": [
@@ -625,6 +663,8 @@
       "name": "Washington, D.C.",
       "country": "USA",
       "bestSeason": "Spring, Fall",
+      "description": "Washington, D.C., the capital of the United States, is home to iconic landmarks like the White House, the National Mall, numerous museums, and vibrant cultural institutions.",
+      "image": "washingtonDC.jpg",
       "coordinates": { "lat": 38.9072, "lng": -77.0369 },
       "activities": [
         {
@@ -653,6 +693,8 @@
       "name": "Cape Town",
       "country": "South Africa",
       "bestSeason": "November - March",
+      "description": "Cape Town, nestled between mountains and the sea, is famed for its breathtaking landscapes, vibrant cultural scene, historic Robben Island, and the iconic Table Mountain.",
+      "image": "capetownSouthAf.jpg",
       "coordinates": { "lat": -33.9249, "lng": 18.4241 },
       "activities": [
         {
@@ -685,6 +727,8 @@
       "name": "Barcelona",
       "country": "Spain",
       "bestSeason": "Spring, Fall",
+      "description": "Barcelona is a cosmopolitan city in Spain, renowned for its unique architecture by Antoni Gaudí, vibrant street life, beautiful beaches, and rich culinary traditions.",
+      "image": "barcelonaSpain.jpg",
       "coordinates": { "lat": 41.3851, "lng": 2.1734 },
       "activities": [
         {
@@ -720,6 +764,8 @@
       "name": "Kyoto",
       "country": "Japan",
       "bestSeason": "Spring, Fall",
+      "description": "Kyoto, Japan's cultural heart, is known for its classical Buddhist temples, gardens, imperial palaces, Shinto shrines, and traditional wooden houses, offering a glimpse into Japan's rich heritage.",
+      "image": "kyotoJapan.jpg",
       "coordinates": { "lat": 35.0116, "lng": 135.7681 },
       "activities": [
         {
@@ -755,6 +801,8 @@
       "name": "Reykjavik",
       "country": "Iceland",
       "bestSeason": "June - September",
+      "description": "Reykjavik, Iceland's capital, is known for its modern architecture, vibrant arts scene, geothermal pools, and proximity to stunning natural wonders like waterfalls and glaciers.",
+      "image": "reykjavikIceland.jpg",
       "coordinates": { "lat": 64.1355, "lng": -21.8954 },
       "activities": [
         {
@@ -790,6 +838,8 @@
       "name": "Sydney",
       "country": "Australia",
       "bestSeason": "September - May",
+      "description": "Sydney, Australia's largest city, is famous for its stunning harbor, iconic Sydney Opera House, beautiful beaches like Bondi, and vibrant cultural and dining scenes.",
+      "image": "sydneyAustralia.jpg",
       "coordinates": { "lat": -33.8688, "lng": 151.2093 },
       "activities": [
         {
