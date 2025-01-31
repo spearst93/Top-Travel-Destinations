@@ -1,0 +1,799 @@
+{
+  "destinations": [
+    {
+      "name": "London",
+      "country": "U.K.",
+      "bestSeason": "Spring, Summer",
+      "coordinates": { "lat": 51.5074, "lng": -0.1278 },
+      "activities": [
+        {
+          "activityName": "Big Ben Tour",
+          "category": "Landmark",
+          "cost": 25,
+          "duration": 2,
+          "popularityScore": 95,
+          "weatherSensitive": false,
+          "specialFeatures": [
+            "Guided Tour",
+            "Photography Allowed",
+            "History Walk"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Heathrow Airport (LHR)",
+        "publicTransit": ["Tube", "Bus"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Varies",
+        "activities": "Moderate"
+      },
+      "safety": { "score": 8.5, "visaRequired": "Varies by country" }
+    },
+    {
+      "name": "New York City",
+      "country": "USA",
+      "bestSeason": "Spring, Fall",
+      "coordinates": { "lat": 40.7128, "lng": -74.006 },
+      "activities": [
+        {
+          "activityName": "Statue of Liberty Tour",
+          "category": "Landmark",
+          "cost": 30,
+          "duration": 3,
+          "popularityScore": 97,
+          "weatherSensitive": true,
+          "specialFeatures": ["Ferry Ride", "Guided Tour", "Observation Deck"]
+        }
+      ],
+      "transportation": {
+        "airport": "JFK International Airport (JFK)",
+        "publicTransit": ["Subway", "Bus"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Varies",
+        "activities": "Varies"
+      },
+      "safety": { "score": 7.5, "visaRequired": "Yes for non-U.S. citizens" }
+    },
+    {
+      "name": "Bali",
+      "country": "Indonesia",
+      "bestSeason": "April-October",
+      "coordinates": { "lat": -8.3405, "lng": 115.092 },
+      "activities": [
+        {
+          "activityName": "Uluwatu Temple Visit",
+          "category": "Cultural",
+          "cost": 15,
+          "duration": 2,
+          "popularityScore": 92,
+          "weatherSensitive": true,
+          "specialFeatures": [
+            "Sunset Views",
+            "Traditional Dance",
+            "Historical Site"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Ngurah Rai International Airport (DPS)",
+        "publicTransit": ["Taxi", "Scooter Rental"]
+      },
+      "costLevel": {
+        "accommodation": "Affordable",
+        "food": "Cheap",
+        "activities": "Affordable"
+      },
+      "safety": {
+        "score": 7.0,
+        "visaRequired": "Visa on arrival for most countries"
+      }
+    },
+    {
+      "name": "O'ahu",
+      "country": "USA",
+      "bestSeason": "Year-round",
+      "coordinates": { "lat": 21.4389, "lng": -158.0001 },
+      "activities": [
+        {
+          "activityName": "Waikiki Beach Surfing",
+          "category": "Outdoor",
+          "cost": 50,
+          "duration": 2,
+          "popularityScore": 96,
+          "weatherSensitive": true,
+          "specialFeatures": [
+            "Surf Lessons",
+            "Beautiful Scenery",
+            "Relaxing Atmosphere"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Daniel K. Inouye International Airport (HNL)",
+        "publicTransit": ["Bus", "Car Rental"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Moderate",
+        "activities": "Varies"
+      },
+      "safety": { "score": 8.0, "visaRequired": "No for U.S. citizens" }
+    },
+    {
+      "name": "Dubai",
+      "country": "U.A.E.",
+      "bestSeason": "Winter, Spring",
+      "coordinates": { "lat": 25.276987, "lng": 55.296249 },
+      "activities": [
+        {
+          "activityName": "Burj Khalifa Tour",
+          "category": "Landmark",
+          "cost": 40,
+          "duration": 2,
+          "popularityScore": 98,
+          "weatherSensitive": false,
+          "specialFeatures": [
+            "Tallest Building",
+            "Observation Deck",
+            "Luxury Experience"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Dubai International Airport (DXB)",
+        "publicTransit": ["Metro", "Taxi", "Bus"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Varies",
+        "activities": "Expensive"
+      },
+      "safety": {
+        "score": 8.2,
+        "visaRequired": "Visa on arrival for many countries"
+      }
+    },
+    {
+      "name": "Las Vegas",
+      "country": "USA",
+      "bestSeason": "Spring, Fall",
+      "coordinates": { "lat": 36.1699, "lng": -115.1398 },
+      "activities": [
+        {
+          "activityName": "Las Vegas Strip Tour",
+          "category": "Entertainment",
+          "cost": 0,
+          "duration": 3,
+          "popularityScore": 94,
+          "weatherSensitive": false,
+          "specialFeatures": ["Casinos", "Nightlife", "Shows"]
+        }
+      ],
+      "transportation": {
+        "airport": "McCarran International Airport (LAS)",
+        "publicTransit": ["Monorail", "Bus"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Moderate",
+        "activities": "Expensive"
+      },
+      "safety": { "score": 7.0, "visaRequired": "No for U.S. citizens" }
+    },
+    {
+      "name": "Sicily",
+      "country": "Italy",
+      "bestSeason": "Spring, Summer",
+      "coordinates": { "lat": 37.6, "lng": 14.0154 },
+      "activities": [
+        {
+          "activityName": "Mount Etna Hike",
+          "category": "Outdoor",
+          "cost": 50,
+          "duration": 5,
+          "popularityScore": 90,
+          "weatherSensitive": true,
+          "specialFeatures": [
+            "Volcano Trekking",
+            "Panoramic Views",
+            "Guided Tours"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Catania-Fontanarossa Airport (CTA)",
+        "publicTransit": ["Bus", "Car Rental"]
+      },
+      "costLevel": {
+        "accommodation": "Moderate",
+        "food": "Affordable",
+        "activities": "Varies"
+      },
+      "safety": {
+        "score": 7.5,
+        "visaRequired": "Schengen Visa for non-EU citizens"
+      }
+    },
+    {
+      "name": "Florida Keys",
+      "country": "USA",
+      "bestSeason": "Winter, Spring",
+      "coordinates": { "lat": 24.5551, "lng": -81.7826 },
+      "activities": [
+        {
+          "activityName": "Snorkeling at Key Largo",
+          "category": "Outdoor",
+          "cost": 75,
+          "duration": 4,
+          "popularityScore": 93,
+          "weatherSensitive": true,
+          "specialFeatures": [
+            "Coral Reefs",
+            "Marine Wildlife",
+            "Crystal Clear Water"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Miami International Airport (MIA)",
+        "publicTransit": ["Car Rental", "Shuttle"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Moderate",
+        "activities": "Varies"
+      },
+      "safety": { "score": 8.0, "visaRequired": "No for U.S. citizens" }
+    },
+    {
+      "name": "Paris",
+      "country": "France",
+      "bestSeason": "Spring, Fall",
+      "coordinates": { "lat": 48.8566, "lng": 2.3522 },
+      "activities": [
+        {
+          "activityName": "Eiffel Tower Visit",
+          "category": "Landmark",
+          "cost": 35,
+          "duration": 2,
+          "popularityScore": 99,
+          "weatherSensitive": false,
+          "specialFeatures": [
+            "Panoramic Views",
+            "Romantic Experience",
+            "Photography"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Charles de Gaulle Airport (CDG)",
+        "publicTransit": ["Metro", "Bus", "Taxi"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Moderate",
+        "activities": "Varies"
+      },
+      "safety": {
+        "score": 8.3,
+        "visaRequired": "Schengen Visa for non-EU citizens"
+      }
+    },
+    {
+      "name": "New Orleans",
+      "country": "USA",
+      "bestSeason": "Spring, Fall",
+      "coordinates": { "lat": 29.9511, "lng": -90.0715 },
+      "activities": [
+        {
+          "activityName": "French Quarter Walking Tour",
+          "category": "Cultural",
+          "cost": 25,
+          "duration": 3,
+          "popularityScore": 95,
+          "weatherSensitive": false,
+          "specialFeatures": [
+            "Live Jazz",
+            "Historic Architecture",
+            "Local Cuisine"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Louis Armstrong New Orleans International Airport (MSY)",
+        "publicTransit": ["Streetcar", "Bus"]
+      },
+      "costLevel": {
+        "accommodation": "Moderate",
+        "food": "Affordable",
+        "activities": "Varies"
+      },
+      "safety": { "score": 7.0, "visaRequired": "No for U.S. citizens" }
+    },
+    {
+      "name": "Rome",
+      "country": "Italy",
+      "bestSeason": "Spring, Fall",
+      "coordinates": { "lat": 41.9028, "lng": 12.4964 },
+      "activities": [
+        {
+          "activityName": "Colosseum Tour",
+          "category": "Cultural",
+          "cost": 25,
+          "duration": 3,
+          "popularityScore": 95,
+          "weatherSensitive": false,
+          "specialFeatures": [
+            "Ancient Architecture",
+            "Guided Tour",
+            "Historical Site"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Leonardo da Vinci International Airport (FCO)",
+        "publicTransit": ["Metro", "Bus", "Tram"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Moderate",
+        "activities": "Varies"
+      },
+      "safety": {
+        "score": 7.8,
+        "visaRequired": "Schengen Visa for non-EU citizens"
+      }
+    },
+    {
+      "name": "Nashville",
+      "country": "USA",
+      "bestSeason": "Spring, Fall",
+      "coordinates": { "lat": 36.1627, "lng": -86.7816 },
+      "activities": [
+        {
+          "activityName": "Grand Ole Opry Show",
+          "category": "Entertainment",
+          "cost": 75,
+          "duration": 3,
+          "popularityScore": 96,
+          "weatherSensitive": false,
+          "specialFeatures": [
+            "Live Country Music",
+            "Historic Venue",
+            "VIP Experience"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Nashville International Airport (BNA)",
+        "publicTransit": ["Bus", "Ride Share"]
+      },
+      "costLevel": {
+        "accommodation": "Moderate",
+        "food": "Affordable",
+        "activities": "Moderate"
+      },
+      "safety": { "score": 7.5, "visaRequired": "No for U.S. citizens" }
+    },
+    {
+      "name": "Hanoi",
+      "country": "Vietnam",
+      "bestSeason": "October - April",
+      "coordinates": { "lat": 21.0285, "lng": 105.8544 },
+      "activities": [
+        {
+          "activityName": "Old Quarter Street Food Tour",
+          "category": "Food",
+          "cost": 20,
+          "duration": 3,
+          "popularityScore": 94,
+          "weatherSensitive": true,
+          "specialFeatures": [
+            "Local Cuisine",
+            "Night Market",
+            "Cultural Experience"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Noi Bai International Airport (HAN)",
+        "publicTransit": ["Bus", "Taxi", "Motorbike Rental"]
+      },
+      "costLevel": {
+        "accommodation": "Affordable",
+        "food": "Cheap",
+        "activities": "Affordable"
+      },
+      "safety": {
+        "score": 7.2,
+        "visaRequired": "Visa on arrival for many countries"
+      }
+    },
+    {
+      "name": "San Francisco",
+      "country": "USA",
+      "bestSeason": "Fall, Spring",
+      "coordinates": { "lat": 37.7749, "lng": -122.4194 },
+      "activities": [
+        {
+          "activityName": "Golden Gate Bridge Walk",
+          "category": "Landmark",
+          "cost": 0,
+          "duration": 2,
+          "popularityScore": 94,
+          "weatherSensitive": true,
+          "specialFeatures": ["Scenic Views", "Photography", "Iconic Structure"]
+        }
+      ],
+      "transportation": {
+        "airport": "San Francisco International Airport (SFO)",
+        "publicTransit": ["BART", "Bus", "Cable Car"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Varies",
+        "activities": "Moderate"
+      },
+      "safety": { "score": 7.9, "visaRequired": "No for U.S. citizens" }
+    },
+    {
+      "name": "Marrakech",
+      "country": "Morocco",
+      "bestSeason": "Spring, Fall",
+      "coordinates": { "lat": 31.6295, "lng": -7.9811 },
+      "activities": [
+        {
+          "activityName": "Jemaa el-Fnaa Market Tour",
+          "category": "Cultural",
+          "cost": 10,
+          "duration": 3,
+          "popularityScore": 92,
+          "weatherSensitive": true,
+          "specialFeatures": [
+            "Traditional Souks",
+            "Street Performers",
+            "Local Cuisine"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Marrakech Menara Airport (RAK)",
+        "publicTransit": ["Taxi", "Bus"]
+      },
+      "costLevel": {
+        "accommodation": "Moderate",
+        "food": "Affordable",
+        "activities": "Moderate"
+      },
+      "safety": { "score": 7.4, "visaRequired": "Visa-free for many countries" }
+    },
+    {
+      "name": "Chicago",
+      "country": "USA",
+      "bestSeason": "Summer, Fall",
+      "coordinates": { "lat": 41.8781, "lng": -87.6298 },
+      "activities": [
+        {
+          "activityName": "Skydeck Chicago Experience",
+          "category": "Landmark",
+          "cost": 30,
+          "duration": 2,
+          "popularityScore": 96,
+          "weatherSensitive": false,
+          "specialFeatures": [
+            "360-Degree Views",
+            "Glass Floor Experience",
+            "City Skyline"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "O'Hare International Airport (ORD)",
+        "publicTransit": ["L Train", "Bus"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Varies",
+        "activities": "Moderate"
+      },
+      "safety": { "score": 7.3, "visaRequired": "No for U.S. citizens" }
+    },
+    {
+      "name": "Crete",
+      "country": "Greece",
+      "bestSeason": "Spring, Summer",
+      "coordinates": { "lat": 35.2401, "lng": 24.8093 },
+      "activities": [
+        {
+          "activityName": "Knossos Palace Tour",
+          "category": "Cultural",
+          "cost": 20,
+          "duration": 3,
+          "popularityScore": 94,
+          "weatherSensitive": false,
+          "specialFeatures": [
+            "Ancient Minoan Ruins",
+            "Archaeological Wonders",
+            "Guided Tours"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Heraklion International Airport (HER)",
+        "publicTransit": ["Bus", "Taxi"]
+      },
+      "costLevel": {
+        "accommodation": "Moderate",
+        "food": "Affordable",
+        "activities": "Varies"
+      },
+      "safety": {
+        "score": 8.1,
+        "visaRequired": "Schengen Visa for non-EU citizens"
+      }
+    },
+    {
+      "name": "Charleston",
+      "country": "USA",
+      "bestSeason": "Spring, Fall",
+      "coordinates": { "lat": 32.7765, "lng": -79.9311 },
+      "activities": [
+        {
+          "activityName": "Historic Downtown Walking Tour",
+          "category": "Cultural",
+          "cost": 25,
+          "duration": 2,
+          "popularityScore": 93,
+          "weatherSensitive": false,
+          "specialFeatures": [
+            "Antebellum Architecture",
+            "Historic Landmarks",
+            "Horse-Drawn Carriages"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Charleston International Airport (CHS)",
+        "publicTransit": ["Bus", "Taxi"]
+      },
+      "costLevel": {
+        "accommodation": "Moderate",
+        "food": "Affordable",
+        "activities": "Varies"
+      },
+      "safety": { "score": 7.8, "visaRequired": "No for U.S. citizens" }
+    },
+    {
+      "name": "Bangkok",
+      "country": "Thailand",
+      "bestSeason": "November - February",
+      "coordinates": { "lat": 13.7563, "lng": 100.5018 },
+      "activities": [
+        {
+          "activityName": "Grand Palace Tour",
+          "category": "Cultural",
+          "cost": 20,
+          "duration": 2,
+          "popularityScore": 92,
+          "weatherSensitive": true,
+          "specialFeatures": [
+            "Historical Architecture",
+            "Thai Culture",
+            "Photography"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Suvarnabhumi Airport (BKK)",
+        "publicTransit": ["BTS Skytrain", "MRT Subway", "Tuk-tuks"]
+      },
+      "costLevel": {
+        "accommodation": "Affordable",
+        "food": "Cheap",
+        "activities": "Moderate"
+      },
+      "safety": {
+        "score": 7.5,
+        "visaRequired": "Visa on arrival for many countries"
+      }
+    },
+    {
+      "name": "Washington, D.C.",
+      "country": "USA",
+      "bestSeason": "Spring, Fall",
+      "coordinates": { "lat": 38.9072, "lng": -77.0369 },
+      "activities": [
+        {
+          "activityName": "National Mall Tour",
+          "category": "Cultural",
+          "cost": 0,
+          "duration": 4,
+          "popularityScore": 90,
+          "weatherSensitive": true,
+          "specialFeatures": ["Historical Monuments", "Museums", "Scenic Walks"]
+        }
+      ],
+      "transportation": {
+        "airport": "Dulles International Airport (IAD)",
+        "publicTransit": ["Metro", "Bus"]
+      },
+      "costLevel": {
+        "accommodation": "Moderate",
+        "food": "Varies",
+        "activities": "Affordable"
+      },
+      "safety": { "score": 7.2, "visaRequired": "Yes for non-U.S. citizens" }
+    },
+    {
+      "name": "Cape Town",
+      "country": "South Africa",
+      "bestSeason": "November - March",
+      "coordinates": { "lat": -33.9249, "lng": 18.4241 },
+      "activities": [
+        {
+          "activityName": "Table Mountain Hike",
+          "category": "Outdoor",
+          "cost": 0,
+          "duration": 4,
+          "popularityScore": 96,
+          "weatherSensitive": true,
+          "specialFeatures": [
+            "Scenic Views",
+            "Wildlife Sightings",
+            "Photography"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Cape Town International Airport (CPT)",
+        "publicTransit": ["Bus", "Taxi"]
+      },
+      "costLevel": {
+        "accommodation": "Moderate",
+        "food": "Affordable",
+        "activities": "Varies"
+      },
+      "safety": { "score": 7.0, "visaRequired": "Varies by country" }
+    },
+    {
+      "name": "Barcelona",
+      "country": "Spain",
+      "bestSeason": "Spring, Fall",
+      "coordinates": { "lat": 41.3851, "lng": 2.1734 },
+      "activities": [
+        {
+          "activityName": "Sagrada Familia Tour",
+          "category": "Cultural",
+          "cost": 30,
+          "duration": 2,
+          "popularityScore": 95,
+          "weatherSensitive": false,
+          "specialFeatures": [
+            "Architectural Wonder",
+            "Guided Tours",
+            "Photography"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Barcelona-El Prat Airport (BCN)",
+        "publicTransit": ["Metro", "Bus", "Taxi"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Moderate",
+        "activities": "Varies"
+      },
+      "safety": {
+        "score": 8.2,
+        "visaRequired": "Schengen Visa for non-EU citizens"
+      }
+    },
+    {
+      "name": "Kyoto",
+      "country": "Japan",
+      "bestSeason": "Spring, Fall",
+      "coordinates": { "lat": 35.0116, "lng": 135.7681 },
+      "activities": [
+        {
+          "activityName": "Fushimi Inari Shrine Visit",
+          "category": "Cultural",
+          "cost": 0,
+          "duration": 2,
+          "popularityScore": 97,
+          "weatherSensitive": false,
+          "specialFeatures": [
+            "Historic Temples",
+            "Torii Gate Walk",
+            "Cultural Experience"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Kansai International Airport (KIX)",
+        "publicTransit": ["Train", "Bus"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Affordable",
+        "activities": "Varies"
+      },
+      "safety": {
+        "score": 8.5,
+        "visaRequired": "Visa required for some countries"
+      }
+    },
+    {
+      "name": "Reykjavik",
+      "country": "Iceland",
+      "bestSeason": "June - September",
+      "coordinates": { "lat": 64.1355, "lng": -21.8954 },
+      "activities": [
+        {
+          "activityName": "Northern Lights Tour",
+          "category": "Outdoor",
+          "cost": 100,
+          "duration": 5,
+          "popularityScore": 98,
+          "weatherSensitive": true,
+          "specialFeatures": [
+            "Aurora Borealis",
+            "Night Sky Photography",
+            "Guided Experience"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Keflavik International Airport (KEF)",
+        "publicTransit": ["Bus", "Car Rental"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Expensive",
+        "activities": "Varies"
+      },
+      "safety": {
+        "score": 9.0,
+        "visaRequired": "Schengen Visa for non-EU citizens"
+      }
+    },
+    {
+      "name": "Sydney",
+      "country": "Australia",
+      "bestSeason": "September - May",
+      "coordinates": { "lat": -33.8688, "lng": 151.2093 },
+      "activities": [
+        {
+          "activityName": "Sydney Opera House Tour",
+          "category": "Cultural",
+          "cost": 40,
+          "duration": 2,
+          "popularityScore": 96,
+          "weatherSensitive": false,
+          "specialFeatures": [
+            "Architectural Marvel",
+            "Live Performances",
+            "Harbour Views"
+          ]
+        }
+      ],
+      "transportation": {
+        "airport": "Sydney Kingsford Smith Airport (SYD)",
+        "publicTransit": ["Train", "Bus", "Ferry"]
+      },
+      "costLevel": {
+        "accommodation": "Expensive",
+        "food": "Moderate",
+        "activities": "Varies"
+      },
+      "safety": {
+        "score": 8.7,
+        "visaRequired": "ETA Visa for most travelers"
+      }
+    }
+  ]
+}
