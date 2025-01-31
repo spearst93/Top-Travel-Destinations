@@ -1,6 +1,7 @@
 {
   "destinations": [
     {
+      "id": 1,
       "name": "London",
       "country": "U.K.",
       "bestSeason": "Spring, Summer",
@@ -32,6 +33,7 @@
       "safety": { "score": 8.5, "visaRequired": "Varies by country" }
     },
     {
+      "id": 2,
       "name": "New York City",
       "country": "USA",
       "bestSeason": "Spring, Fall",
@@ -59,6 +61,7 @@
       "safety": { "score": 7.5, "visaRequired": "Yes for non-U.S. citizens" }
     },
     {
+      "id": 3,
       "name": "Bali",
       "country": "Indonesia",
       "bestSeason": "April-October",
@@ -93,6 +96,7 @@
       }
     },
     {
+      "id": 4,
       "name": "O'ahu",
       "country": "USA",
       "bestSeason": "Year-round",
@@ -124,6 +128,7 @@
       "safety": { "score": 8.0, "visaRequired": "No for U.S. citizens" }
     },
     {
+      "id": 5,
       "name": "Dubai",
       "country": "U.A.E.",
       "bestSeason": "Winter, Spring",
@@ -158,6 +163,7 @@
       }
     },
     {
+      "id": 6,
       "name": "Las Vegas",
       "country": "USA",
       "bestSeason": "Spring, Fall",
@@ -185,6 +191,7 @@
       "safety": { "score": 7.0, "visaRequired": "No for U.S. citizens" }
     },
     {
+      "id": 7,
       "name": "Sicily",
       "country": "Italy",
       "bestSeason": "Spring, Summer",
@@ -219,6 +226,7 @@
       }
     },
     {
+      "id": 8,
       "name": "Florida Keys",
       "country": "USA",
       "bestSeason": "Winter, Spring",
@@ -250,6 +258,7 @@
       "safety": { "score": 8.0, "visaRequired": "No for U.S. citizens" }
     },
     {
+      "id": 9,
       "name": "Paris",
       "country": "France",
       "bestSeason": "Spring, Fall",
@@ -284,6 +293,7 @@
       }
     },
     {
+      "id": 10,
       "name": "New Orleans",
       "country": "USA",
       "bestSeason": "Spring, Fall",
@@ -315,6 +325,7 @@
       "safety": { "score": 7.0, "visaRequired": "No for U.S. citizens" }
     },
     {
+      "id": 11,
       "name": "Rome",
       "country": "Italy",
       "bestSeason": "Spring, Fall",
@@ -349,6 +360,7 @@
       }
     },
     {
+      "id": 12,
       "name": "Nashville",
       "country": "USA",
       "bestSeason": "Spring, Fall",
@@ -380,6 +392,7 @@
       "safety": { "score": 7.5, "visaRequired": "No for U.S. citizens" }
     },
     {
+      "id": 13,
       "name": "Hanoi",
       "country": "Vietnam",
       "bestSeason": "October - April",
@@ -414,6 +427,7 @@
       }
     },
     {
+      "id": 14,
       "name": "San Francisco",
       "country": "USA",
       "bestSeason": "Fall, Spring",
@@ -441,6 +455,7 @@
       "safety": { "score": 7.9, "visaRequired": "No for U.S. citizens" }
     },
     {
+      "id": 15,
       "name": "Marrakech",
       "country": "Morocco",
       "bestSeason": "Spring, Fall",
@@ -472,6 +487,7 @@
       "safety": { "score": 7.4, "visaRequired": "Visa-free for many countries" }
     },
     {
+      "id": 16,
       "name": "Chicago",
       "country": "USA",
       "bestSeason": "Summer, Fall",
@@ -503,6 +519,7 @@
       "safety": { "score": 7.3, "visaRequired": "No for U.S. citizens" }
     },
     {
+      "id": 17,
       "name": "Crete",
       "country": "Greece",
       "bestSeason": "Spring, Summer",
@@ -537,6 +554,7 @@
       }
     },
     {
+      "id": 18,
       "name": "Charleston",
       "country": "USA",
       "bestSeason": "Spring, Fall",
@@ -568,6 +586,7 @@
       "safety": { "score": 7.8, "visaRequired": "No for U.S. citizens" }
     },
     {
+      "id": 19,
       "name": "Bangkok",
       "country": "Thailand",
       "bestSeason": "November - February",
@@ -602,6 +621,7 @@
       }
     },
     {
+      "id": 20,
       "name": "Washington, D.C.",
       "country": "USA",
       "bestSeason": "Spring, Fall",
@@ -629,6 +649,7 @@
       "safety": { "score": 7.2, "visaRequired": "Yes for non-U.S. citizens" }
     },
     {
+      "id": 21,
       "name": "Cape Town",
       "country": "South Africa",
       "bestSeason": "November - March",
@@ -660,6 +681,7 @@
       "safety": { "score": 7.0, "visaRequired": "Varies by country" }
     },
     {
+      "id": 22,
       "name": "Barcelona",
       "country": "Spain",
       "bestSeason": "Spring, Fall",
@@ -694,6 +716,7 @@
       }
     },
     {
+      "id": 23,
       "name": "Kyoto",
       "country": "Japan",
       "bestSeason": "Spring, Fall",
@@ -728,6 +751,7 @@
       }
     },
     {
+      "id": 24,
       "name": "Reykjavik",
       "country": "Iceland",
       "bestSeason": "June - September",
@@ -762,6 +786,7 @@
       }
     },
     {
+      "id": 25,
       "name": "Sydney",
       "country": "Australia",
       "bestSeason": "September - May",
