@@ -51,8 +51,8 @@ const DestinationList = ({ destinations }: DestinationListProps) => {
 
       <div className="DestinationList-destinationList">
         {filteredDestinations.length > 0 ? (
-          filteredDestinations.map((destination) => (
-            <DestinationCard key={destination.id} destination={destination} />
+          filteredDestinations.map((destination, index) => (
+            <DestinationCard key={destination.id} destination={destination} index={index} />
           ))
         ) : (
           <p className="DestinationList-noResults">

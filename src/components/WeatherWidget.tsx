@@ -1,5 +1,6 @@
 import { useWeather } from '../hooks/useWeather';
 import { getWeatherIconUrl } from '../services/weatherApi';
+import { WeatherSkeleton } from './Skeleton';
 
 interface WeatherWidgetProps {
   lat: number;
@@ -10,12 +11,7 @@ const WeatherWidget = ({ lat, lng }: WeatherWidgetProps) => {
   const { weather, isLoading, error, refetch } = useWeather(lat, lng);
 
   if (isLoading) {
-    return (
-      <div className="WeatherWidget WeatherWidget--loading">
-        <div className="WeatherWidget-spinner" aria-label="Loading weather data" />
-        <span>Loading weather...</span>
-      </div>
-    );
+    return <WeatherSkeleton />;
   }
 
   if (error) {

@@ -1,4 +1,5 @@
 import { MouseEvent } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useFavorites } from '../contexts';
 
 interface FavoriteButtonProps {
@@ -22,22 +23,33 @@ const FavoriteButton = ({
   };
 
   return (
-    <button
+    <motion.button
       onClick={handleClick}
       className={`FavoriteButton ${favorited ? 'FavoriteButton--active' : ''} ${className}`}
       aria-label={favorited ? 'Remove from favorites' : 'Add to favorites'}
       aria-pressed={favorited}
       title={favorited ? 'Remove from favorites' : 'Add to favorites'}
+      whileTap={{ scale: 0.85 }}
     >
-      <span className="FavoriteButton-icon" aria-hidden="true">
-        {favorited ? '❤️' : '🤍'}
-      </span>
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={favorited ? 'filled' : 'empty'}
+          className="FavoriteButton-icon"
+          aria-hidden="true"
+          initial={{ scale: 0, rotate: -180 }}
+          animate={{ scale: 1, rotate: 0 }}
+          exit={{ scale: 0, rotate: 180 }}
+          transition={{ duration: 0.2 }}
+        >
+          {favorited ? '❤️' : '🤍'}
+        </motion.span>
+      </AnimatePresence>
       {showLabel && (
         <span className="FavoriteButton-label">
           {favorited ? 'Favorited' : 'Add to Favorites'}
         </span>
       )}
-    </button>
+    </motion.button>
   );
 };
 
