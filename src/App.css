@@ -12,33 +12,41 @@ body {
 }
 
 .App {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
   min-height: 100vh;
   padding: 20px;
 }
 
-.info {
-  padding: 16px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.country {
-  margin: 0 0 8px 0;
-  color: #555;
+.main-title {
+  font-size: 3rem;
   font-weight: bold;
+  text-align: center;
+  color: #ff4500;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.description {
-  font-size: 0.9em;
+/* DestinationList Styles */
+.DestinationList-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.DestinationList-destinationList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.DestinationList-noResults {
+  text-align: center;
+  font-size: 1.2em;
   color: #666;
-  flex-grow: 1;
+  padding: 40px;
+  grid-column: 1 / -1;
 }
 
-.filterContainer {
+/* Filter Styles */
+.Filter-filterContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -46,7 +54,7 @@ body {
   justify-content: center;
 }
 
-.searchBar {
+.Filter-searchBar {
   flex: 1 1 300px;
   padding: 10px 15px;
   border: 1px solid #ccc;
@@ -54,7 +62,7 @@ body {
   font-size: 2em;
 }
 
-.filterDropdown {
+.Filter-filterDropdown {
   flex: 1 1 200px;
   padding: 10px 15px;
   border: 1px solid #ccc;
@@ -62,13 +70,68 @@ body {
   font-size: 2em;
 }
 
-.detailsContainer {
+/* DestinationCard Styles */
+.DestinationCard-cardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.DestinationCard-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.DestinationCard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.DestinationCard-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.DestinationCard-info {
+  padding: 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.DestinationCard-title {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.25em;
+}
+
+.DestinationCard-country {
+  margin: 0 0 8px 0;
+  color: #555;
+  font-weight: bold;
+}
+
+.DestinationCard-description {
+  font-size: 0.9em;
+  color: #666;
+  flex-grow: 1;
+  line-height: 1.4;
+}
+
+/* DestinationDetail Styles */
+.DestinationDetails-detailsContainer {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
 
-.backLink {
+.DestinationDetails-backLink {
   display: inline-block;
   margin-bottom: 20px;
   text-decoration: none;
@@ -76,17 +139,61 @@ body {
   font-weight: bold;
 }
 
-.backLink:hover {
+.DestinationDetails-backLink:hover {
   text-decoration: underline;
 }
 
-.image {
+.DestinationDetails-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.DestinationDetails-image {
   width: 100%;
   height: auto;
   border-radius: 8px;
   margin-bottom: 20px;
 }
 
+.DestinationDetails-map {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.DestinationDetails-notFound {
+  text-align: center;
+  padding: 50px;
+}
+
+.DestinationDetails-notFound a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.DestinationDetails-notFound a:hover {
+  text-decoration: underline;
+}
+
+/* App 404 Page Styles */
+.App-notFound {
+  text-align: center;
+  padding: 50px;
+  grid-column: 1 / -1;
+}
+
+.App-backLink {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.App-backLink:hover {
+  text-decoration: underline;
+}
+
+/* General Typography */
 h1 {
   margin-top: 0;
   color: #333;
@@ -97,41 +204,7 @@ h3 {
   color: #555;
 }
 
-.activitiesList {
-  list-style-type: none;
-  padding: 0;
-}
-
-.activityItem {
-  background-color: #f9f9f9;
-  padding: 12px;
+p {
   margin-bottom: 10px;
-  border-radius: 4px;
-}
-
-.activityItem p {
-  margin: 4px 0;
-  color: #555;
-}
-
-.notFound {
-  text-align: center;
-  padding: 50px;
-}
-
-.notFound a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.notFound a:hover {
-  text-decoration: underline;
-}
-
-.main-title {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  color: #ff4500; /* Vibrant Orange */
-  margin-top: 20px;
+  line-height: 1.6;
 }

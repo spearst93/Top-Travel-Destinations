@@ -16,7 +16,7 @@ const DestinationCard = ({ destination }) => {
           loading="lazy"
           onError={(e) => {
             e.target.onerror = null
-            e.target.src = '/images/placeholder.jpg'
+            e.target.src = '/images/placeholder.svg'
           }}
         />
 

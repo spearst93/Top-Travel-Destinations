@@ -1,4 +1,3 @@
-import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
@@ -53,7 +52,7 @@ const DestinationDetail = ({ destinations }) => {
         loading="lazy"
         onError={(e) => {
           e.target.onerror = null
-          e.target.src = '/images/placeholder.jpg'
+          e.target.src = '/images/placeholder.svg'
         }}
       />
       <p>
