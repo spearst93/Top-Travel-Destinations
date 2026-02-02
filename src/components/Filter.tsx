@@ -1,5 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import { ChangeEvent } from 'react';
+
+interface FilterProps {
+  searchTerm: string;
+  onSearchChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  seasons: string[];
+  selectedSeason: string;
+  onSeasonChange: (season: string) => void;
+}
 
 const Filter = ({
   searchTerm,
@@ -7,7 +14,7 @@ const Filter = ({
   seasons,
   selectedSeason,
   onSeasonChange
-}) => {
+}: FilterProps) => {
   return (
     <div className="Filter-filterContainer">
       <input
@@ -31,15 +38,7 @@ const Filter = ({
         ))}
       </select>
     </div>
-  )
-}
+  );
+};
 
-Filter.propTypes = {
-  searchTerm: PropTypes.string.isRequired,
-  onSearchChange: PropTypes.func.isRequired,
-  seasons: PropTypes.arrayOf(PropTypes.string).isRequired,
-  selectedSeason: PropTypes.string.isRequired,
-  onSeasonChange: PropTypes.func.isRequired
-}
-
-export default Filter
+export default Filter;

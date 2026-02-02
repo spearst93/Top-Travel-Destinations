@@ -1,59 +1,73 @@
-import { useParams, Link } from 'react-router-dom'
-import PropTypes from 'prop-types'
+import { SyntheticEvent } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+import type { Destination } from '../types/destination';
+import FavoriteButton from './FavoriteButton';
+import WeatherWidget from './WeatherWidget';
 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import 'leaflet/dist/leaflet.css'
+// Fix for default marker icons in Leaflet with bundlers
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
-import L from 'leaflet'
-import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png'
-import markerIcon from 'leaflet/dist/images/marker-icon.png'
-import markerShadow from 'leaflet/dist/images/marker-shadow.png'
-
-delete L.Icon.Default.prototype._getIconUrl
+// @ts-expect-error - Leaflet internal property override
+delete L.Icon.Default.prototype._getIconUrl;
 
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: markerIcon2x,
   iconUrl: markerIcon,
   shadowUrl: markerShadow
-})
+});
 
-const DestinationDetail = ({ destinations }) => {
-  const { name } = useParams()
+interface DestinationDetailProps {
+  destinations: Destination[];
+}
 
-  const decodedName = decodeURIComponent(name)
+const DestinationDetail = ({ destinations }: DestinationDetailProps) => {
+  const { name } = useParams<{ name: string }>();
+
+  const decodedName = decodeURIComponent(name || '');
 
   const destination = destinations.find(
     (dest) => dest.name.toLowerCase() === decodedName.toLowerCase()
-  )
+  );
+
+  const handleImageError = (e: SyntheticEvent<HTMLImageElement>) => {
+    const target = e.currentTarget;
+    target.onerror = null;
+    target.src = '/images/placeholder.svg';
+  };
 
   if (!destination) {
     return (
       <div className="DestinationDetails-notFound">
         <h2>Destination Not Found</h2>
         <Link to="/" className="DestinationDetails-backLink">
-          ← Back to Destinations
+          &larr; Back to Destinations
         </Link>
       </div>
-    )
+    );
   }
 
   return (
     <div className="DestinationDetails-detailsContainer">
       <Link to="/" className="DestinationDetails-backLink">
-        ← Back to Destinations
+        &larr; Back to Destinations
       </Link>
-      <h1 className="DestinationDetails-title">
-        {destination.name}, {destination.country}
-      </h1>
+      <div className="DestinationDetails-header">
+        <h1 className="DestinationDetails-title">
+          {destination.name}, {destination.country}
+        </h1>
+        <FavoriteButton destinationId={destination.id} showLabel />
+      </div>
       <img
         src={`/images/${destination.image}`}
         alt={destination.name}
         className="DestinationDetails-image"
         loading="lazy"
-        onError={(e) => {
-          e.target.onerror = null
-          e.target.src = '/images/placeholder.svg'
-        }}
+        onError={handleImageError}
       />
       <p>
         <strong>Best Season:</strong> {destination.bestSeason}
@@ -61,6 +75,11 @@ const DestinationDetail = ({ destinations }) => {
       <p>
         <strong>Description:</strong> {destination.description}
       </p>
+
+      <WeatherWidget
+        lat={destination.coordinates.lat}
+        lng={destination.coordinates.lng}
+      />
 
       <div className="DestinationDetails-map">
         <MapContainer
@@ -85,24 +104,7 @@ const DestinationDetail = ({ destinations }) => {
         </MapContainer>
       </div>
     </div>
-  )
-}
+  );
+};
 
-DestinationDetail.propTypes = {
-  destinations: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
-      country: PropTypes.string.isRequired,
-      bestSeason: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-      coordinates: PropTypes.shape({
-        lat: PropTypes.number.isRequired,
-        lng: PropTypes.number.isRequired
-      }).isRequired
-    })
-  ).isRequired
-}
-
-export default DestinationDetail
+export default DestinationDetail;
